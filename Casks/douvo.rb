@@ -1,6 +1,6 @@
 cask "douvo" do
-  version "0.1.8"
-  sha256 "aa2da57f3abe37af6a676b49f97cc3c82544a4d09a07a1499de16ee1f61513f7"
+  version "0.1.9"
+  sha256 "608bfe57269bf8931abe6c5193fb3d43baa834db4a0490cba0ce425b79179626"
 
   url "https://github.com/rhinoc/douvo/releases/download/v#{version}/douvo-#{version}-macos.dmg",
       verified: "github.com/rhinoc/douvo/"

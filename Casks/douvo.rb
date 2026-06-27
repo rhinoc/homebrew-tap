@@ -13,6 +13,13 @@ cask "douvo" do
 
   app "Douvo.app"
 
+  caveats <<~EOS
+    Current release builds are not notarized. If macOS blocks first launch, trust the installed app once:
+
+      xattr -dr com.apple.quarantine /Applications/Douvo.app
+      open /Applications/Douvo.app
+  EOS
+
   zap trash: [
     "~/Library/Caches/local.douvo",
     "~/Library/HTTPStorages/local.douvo",
